@@ -127,3 +127,311 @@ nav ul li a:hover {
   font-size: 1.5rem;
   color: rgba(0,0,0,0.5);
 }
+  
+
+/* Plants Section */
+section.plants {
+  margin-top: 8rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+section.plants h2 {
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+section.plants h2 span {
+  color: #e95a08;
+}
+
+section.plants p {
+  margin: 1rem auto 3rem;
+  max-width: 56rem;
+  font-size: 1.5rem;
+  color: rgba(0,0,0,0.5);
+}
+
+.plants-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .plants-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .plants-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.plant-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 1rem;
+  border-radius: 0.625rem; /* 10px */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plant-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.plant-card img {
+  border-radius: 10px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.plant-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #111111;
+  font-weight: 500;
+}
+
+.plant-card p.price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 1.25rem;
+}
+
+.plant-card button {
+  width: 100%;
+  padding: 1.25rem 0;
+  background-color: #e95a08;
+  border: 2px solid #e95a08;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.plant-card button:hover {
+  background-color: white;
+  color: #e95a08;
+  transform: scale(1.03);
+}
+
+/* Lover Section */
+.lover-section {
+  margin: 8rem auto;
+  max-width: 72rem;
+  padding: 0 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+
+.lover-badge {
+  position: absolute;
+  top: -120px;
+  left: 350px;
+  max-width: 286px;
+  visibility: hidden;
+}
+
+@media (min-width: 1024px) {
+  .lover-badge {
+    visibility: visible;
+  }
+}
+
+.lover-section figure img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+}
+
+.lover-content {
+  max-width: 36rem;
+  flex: 1 1 auto;
+}
+
+.lover-content h2 {
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.3;
+}
+
+.lover-content ul {
+  list-style: disc inside;
+  color: rgba(0,0,0,0.5);
+  font-size: 1.5rem;
+  line-height: 2;
+  padding-left: 1rem;
+}
+
+.lover-content ul li {
+  margin-bottom: 1.25rem;
+}
+
+/* Latest Deals */
+.latest-deals {
+  margin: 8rem auto;
+  max-width: 72rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.latest-deals h2 {
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.latest-deals h2 span {
+  color: #e95a08;
+}
+
+.latest-deals p {
+  color: rgba(0,0,0,0.5);
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 1.5rem;
+  color: white;
+}
+
+@media(min-width: 768px) {
+  .deals-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.deal-card {
+  background-blend-mode: overlay;
+  background-color: rgba(0,0,0,0.4);
+  padding: 5rem 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-shadow: 0 0 5px rgba(0,0,0,0.6);
+  cursor: default;
+  transition: transform 0.3s ease;
+}
+
+.deal-card:hover {
+  transform: scale(1.05);
+}
+
+.deal-card h4 {
+  font-family: 'Noto Serif', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.deal-card a {
+  font-weight: 600;
+  text-decoration: underline;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.deal-1 {
+  background-image: url('./assets/deal-bloom.png');
+}
+
+.deal-2 {
+  background-image: url('./assets/deal-ana.png');
+  grid-row-start: 2;
+}
+
+.deal-3 {
+  background-image: url('./assets/deal-zabo.png');
+  grid-column: span 2;
+  grid-row: span 2;
+  font-size: 1.5rem;
+  padding: 8rem 2rem;
+}
+
+/* Newsletter */
+.newsletter {
+  margin-top: 8rem;
+  background-image: url('./assets/news-letter-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 12rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+.newsletter h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Noto Serif', serif;
+}
+
+.newsletter form {
+  max-width: 42rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.75rem 1.25rem;
+  flex: 1 1 300px;
+  border: none;
+  outline-color: #e95a08;
+  font-size: 1.1rem;
+  border-radius: 0;
+}
+
+.newsletter button {
+  padding: 0.75rem 3rem;
+  background-color: #e95a08;
+  border: 2px solid #e95a08;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: white;
+  color: #e95a08;
+}
