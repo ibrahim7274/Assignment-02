@@ -177,7 +177,7 @@ section.plants p {
   align-items: center;
   background: white;
   padding: 1rem;
-  border-radius: 0.625rem; /* 10px */
+  border-radius: 0.625rem; 
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -190,7 +190,7 @@ section.plants p {
 .plant-card img {
   border-radius: 10px;
   width: 100%;
-  height: 150px;
+  /* height: 0px; */
   object-fit: cover;
   margin-bottom: 1rem;
 }
@@ -230,18 +230,20 @@ section.plants p {
 
 /* Lover Section */
 .lover-section {
-  margin: 8rem auto;
+  display: flex;
+  margin: 10rem auto; 
   max-width: 72rem;
   padding: 0 1rem;
   display: flex;
-  gap: 1rem;
+  
+  gap: 5rem;
   flex-wrap: wrap;
   align-items: center;
-  position: relative;
+  position: relative; 
 }
 
 .lover-badge {
-  position: absolute;
+  /* position: absolute; */
   top: -120px;
   left: 350px;
   max-width: 286px;
@@ -435,3 +437,78 @@ section.plants p {
   background-color: white;
   color: #e95a08;
 }
+
+
+/* .... */
+/* Footer */
+footer {
+  margin: 5rem auto;
+  max-width: 72rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+footer > div {
+  flex: 1 1 200px;
+}
+
+footer .logo-footer img {
+  max-width: 144px;
+  margin-bottom: 0.75rem;
+}
+
+footer p {
+  color: rgba(0,0,0,0.5);
+  max-width: 22rem;
+  line-height: 1.5;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+footer ul li a {
+  color: #6b7280;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #e95a08;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .deal-3 {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    font-size: 1.5rem;
+    padding: 4rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .lover-section {
+    flex-direction: column;
+    text-align: center;
+  }
+ 
