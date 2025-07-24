@@ -230,26 +230,26 @@ section.plants p {
 
 /* Lover Section */
 .lover-section {
-  display: flex;
-  margin: 10rem auto; 
-  max-width: 72rem;
-  padding: 0 1rem;
-  display: flex;
-  
-  gap: 5rem;
-  flex-wrap: wrap;
-  align-items: center;
-  position: relative; 
+display: flex;
+justify-content: space-between;
+margin-top: 8rem;
 }
+
 
 .lover-badge {
-  /* position: absolute; */
-  top: -120px;
-  left: 350px;
-  max-width: 286px;
-  visibility: hidden;
-}
+  margin-left: 20px;
 
+}
+.trusted{
+  width:200px;
+  height: 100px;
+  margin-bottom: 60px;
+  margin-left: -100px;
+  
+}
+.lover-content{
+  margin-right: 30px;
+}
 @media (min-width: 1024px) {
   .lover-badge {
     visibility: visible;
@@ -441,6 +441,8 @@ section.plants p {
 
 /* .... */
 /* Footer */
+
+
 footer {
   margin: 5rem auto;
   max-width: 72rem;
