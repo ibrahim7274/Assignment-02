@@ -68,3 +68,35 @@ nav ul li a:hover {
   color: #252432;
   user-select: none;
 }
+
+
+/* Banner */
+.banner {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.75rem;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+/* Banner */
+.banner {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.75rem;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+/* Banner */
+.banner {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.75rem;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
